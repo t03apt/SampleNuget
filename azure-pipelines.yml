@@ -36,4 +36,3 @@ steps:
 - task: PublishSymbols@2
   inputs:
     SearchPattern: '**/bin/**/*.pdb'
-    SymbolServerType: 'TeamServices'
