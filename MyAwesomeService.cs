@@ -4,15 +4,15 @@ namespace SampleNuget;
 
 public class MyAwesomeService
 {
-    public static void Fibonacci(int len, Action<int> func)
+    public static void Fibonacci(int len, Action<int> action)
     {
         int a = 0, b = 1;
-        func(a);
-        func(b);
+        action(a);
+        action(b);
         for (var i = 2; i < len; i++)
         {
             var c = a + b;
-            func(c);
+            action(c);
             a = b;
             b = c;
         }
