@@ -7,7 +7,8 @@
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
     <!-- <VersionPrefix>0.0.1-preview</VersionPrefix> -->
-    <DebugType>portable</DebugType> 
+    <!-- <DebugType>portable</DebugType> -->
+    <DebugType>full</DebugType>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
   </PropertyGroup>
