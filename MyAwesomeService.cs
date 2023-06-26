@@ -2,14 +2,15 @@
 
 public class MyAwesomeService
 {
-    public static void WriteFibonacci(int len)
+    public static IEnumerable<int> WriteFibonacci(int len)
     {
         int a = 0, b = 1;
-        Console.Write("{0} {1}", a, b);
+        yield return a;
+        yield return b;
         for (var i = 2; i < len; i++)
         {
             var c = a + b;
-            Console.Write(" {0}", c);
+            yield return c;
             a = b;
             b = c;
         }
