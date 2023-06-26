@@ -1,16 +1,18 @@
-﻿namespace SampleNuget;
+﻿using System;
+
+namespace SampleNuget;
 
 public class MyAwesomeService
 {
-    public static IEnumerable<int> WriteFibonacci(int len)
+    public static void Fibonacci(int len, Action<int> func)
     {
         int a = 0, b = 1;
-        yield return a;
-        yield return b;
+        func(a);
+        func(b);
         for (var i = 2; i < len; i++)
         {
             var c = a + b;
-            yield return c;
+            func(c);
             a = b;
             b = c;
         }
