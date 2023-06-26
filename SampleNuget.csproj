@@ -4,12 +4,15 @@
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-    <VersionPrefix>0.0.1-preview</VersionPrefix>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <!-- <VersionPrefix>0.0.1-preview</VersionPrefix> -->
+    <!-- <DebugType>portable</DebugType>  -->
+    <!-- <PublishRepositoryUrl>true</PublishRepositoryUrl> -->
+    <!-- <EmbedUntrackedSources>true</EmbedUntrackedSources> -->
   </PropertyGroup>
 
-  <!-- https://github.com/dotnet/sourcelink -->
+<!-- https://github.com/dotnet/sourcelink -->
 <ItemGroup>
   <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.1.1" PrivateAssets="All"/>
 </ItemGroup>
