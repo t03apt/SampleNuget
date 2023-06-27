@@ -6,20 +6,21 @@
     <Nullable>enable</Nullable>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
-    <!-- <VersionPrefix>0.0.1-preview</VersionPrefix> -->
     <DebugType>portable</DebugType>
-    <EmbedAllSources>true</EmbedAllSources>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
+
+    <!-- Source link auth issue workaround -->
+    <EmbedAllSources>true</EmbedAllSources>
   </PropertyGroup>
 
-  <!-- https://github.com/dotnet/sourcelink -->
   <ItemGroup>
+    <!-- https://github.com/dotnet/sourcelink -->
     <PackageReference Include="Microsoft.SourceLink.AzureRepos.Git" Version="1.1.1" PrivateAssets="All"/>
   </ItemGroup>
 
-  <PropertyGroup>
+  <!-- <PropertyGroup>
     <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-  </PropertyGroup>
+  </PropertyGroup> -->
 
 </Project>

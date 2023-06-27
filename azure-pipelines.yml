@@ -27,12 +27,14 @@ steps:
 
 - task: NuGetAuthenticate@0
   displayName: 'NuGet authenticate'
+
 - task: NuGetCommand@2
   displayName: 'NuGet push'
   inputs:
     command: push
     publishVstsFeed: 'DevOpsWorkshop/DevOpsWorkshopFeed'
     allowPackageConflicts: false
+    
 - task: PublishSymbols@2
   inputs:
     SearchPattern: '**/bin/**/*.pdb'
