@@ -36,3 +36,4 @@ steps:
 - task: PublishSymbols@2
   inputs:
     SearchPattern: '**/bin/**/*.pdb'
+    IndexSources: false
