@@ -34,8 +34,8 @@ steps:
     command: push
     publishVstsFeed: 'DevOpsWorkshop/DevOpsWorkshopFeed'
     allowPackageConflicts: false
-    
-- task: PublishSymbols@2
-  inputs:
-    SearchPattern: '**/bin/**/*.pdb'
-    IndexSources: false
+
+# - task: PublishSymbols@2
+#   inputs:
+#     SearchPattern: '**/bin/**/*.pdb'
+#     IndexSources: false
