@@ -11,7 +11,7 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
 
     <!-- Source link auth issue workaround -->
-    <!-- <EmbedAllSources>true</EmbedAllSources> -->
+     <!--<EmbedAllSources>true</EmbedAllSources>--> 
   </PropertyGroup>
 
   <ItemGroup>
